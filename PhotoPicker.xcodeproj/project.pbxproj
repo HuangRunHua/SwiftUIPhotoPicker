@@ -11,6 +11,10 @@
 		BD48518D27F81C1800FD47E2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD48518C27F81C1800FD47E2 /* ContentView.swift */; };
 		BD48518F27F81C1B00FD47E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD48518E27F81C1B00FD47E2 /* Assets.xcassets */; };
 		BD48519227F81C1B00FD47E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD48519127F81C1B00FD47E2 /* Preview Assets.xcassets */; };
+		BD48519927F81DDA00FD47E2 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD48519827F81DDA00FD47E2 /* ImagePicker.swift */; };
+		BD48519C27F820E200FD47E2 /* ImageModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD48519A27F820E200FD47E2 /* ImageModel.xcdatamodeld */; };
+		BD48519E27F8212800FD47E2 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD48519D27F8212800FD47E2 /* Persistence.swift */; };
+		BD4851A027F824B900FD47E2 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD48519F27F824B900FD47E2 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		BD48518C27F81C1800FD47E2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD48518E27F81C1B00FD47E2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD48519127F81C1B00FD47E2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD48519827F81DDA00FD47E2 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BD48519B27F820E200FD47E2 /* ImageModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ImageModel.xcdatamodel; sourceTree = "<group>"; };
+		BD48519D27F8212800FD47E2 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		BD48519F27F824B900FD47E2 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,10 @@
 			children = (
 				BD48518A27F81C1800FD47E2 /* PhotoPickerApp.swift */,
 				BD48518C27F81C1800FD47E2 /* ContentView.swift */,
+				BD48519F27F824B900FD47E2 /* ButtonView.swift */,
+				BD48519D27F8212800FD47E2 /* Persistence.swift */,
+				BD48519A27F820E200FD47E2 /* ImageModel.xcdatamodeld */,
+				BD48519827F81DDA00FD47E2 /* ImagePicker.swift */,
 				BD48518E27F81C1B00FD47E2 /* Assets.xcassets */,
 				BD48519027F81C1B00FD47E2 /* Preview Content */,
 			);
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD48519927F81DDA00FD47E2 /* ImagePicker.swift in Sources */,
 				BD48518D27F81C1800FD47E2 /* ContentView.swift in Sources */,
+				BD4851A027F824B900FD47E2 /* ButtonView.swift in Sources */,
 				BD48518B27F81C1800FD47E2 /* PhotoPickerApp.swift in Sources */,
+				BD48519C27F820E200FD47E2 /* ImageModel.xcdatamodeld in Sources */,
+				BD48519E27F8212800FD47E2 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,8 +283,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoPicker/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JGXJ77W39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = 123456;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,8 +313,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"PhotoPicker/Preview Content\"";
+				DEVELOPMENT_TEAM = 3JGXJ77W39;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = 123456;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -337,6 +357,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BD48519A27F820E200FD47E2 /* ImageModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BD48519B27F820E200FD47E2 /* ImageModel.xcdatamodel */,
+			);
+			currentVersion = BD48519B27F820E200FD47E2 /* ImageModel.xcdatamodel */;
+			path = ImageModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BD48517F27F81C1800FD47E2 /* Project object */;
 }
